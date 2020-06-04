@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Stolzl-Regular; 
+    src: url(fonts/Stolzl-Regular.woff); 
+}
+@font-face {
+    font-family: Stolzl-Light; 
+    src: url(fonts/Stolzl-Light.woff); 
+}
+@font-face {
+    font-family: Stolzl-Book; 
+    src: url(fonts/Stolzl-Book.woff); 
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Stolzl-Book;
+
+}
+.topContainer {   
+    background-color: #6D7A71;
+    position: absolute;
+    top: 0vh;
+    width: 100vw; 
+    height: 100vh; 
+}
+.aosContainer { 
+    background-color: #F0F0F0; 
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    position: absolute; 
+    top: 100vh;
+}
+#image {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+#text {
+    flex:1; 
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 5vw;
+
+}
+h2, h3, button {
+    color:#4A4A4A; 
+}
+h2 
+{
+    font-family: Stolzl-Regular;
+}
+h3 {
+    font-family: Stolzl-Light;
+    font-size: 12pt;
+}
+button {
+    font-family: Stolzl-Book;
+    width: 200px; 
+    height: 50px;
+    border: none; 
+    border-bottom: #2D2D2D 1px solid; 
+    transition: border 2s reverse; 
+    cursor: pointer;
+
+}
+#rect {
+    background-color:#F0F0F0;
+    width: 70px; 
+    height:20px;
+    position: relative;
+    margin-bottom: -30px;
+    margin-left: -70px;
+    transition: ease margin-left 1s; 
+}
+
+button:hover > #rect{
+    margin-left: 210px;
+    transition: ease 1s  margin-left; 
+}
+
+
+/* Menu */
+.navbar {
+    height: 10vh; 
+    width: 100%;
+    z-index: 99;
+    position: fixed; 
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: transparent;
+}
+#logo{
+     flex: 1; 
+     width: 50%;
+     margin-left: 30px;
+     cursor: pointer;
+}
+#menu {
+    flex: 5; 
+    display: flex; 
+    list-style: none;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+#icons {
+    flex: 1;
+    justify-content: center; 
+}
+
+#item1, #item2, #item3 {
+    margin-right: 20px;
+    font-size: 10pt;
+    color: black;
+    cursor: pointer;
+}
+
+#search, #account, #bag {
+    margin-right: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#bg {
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.notScrolled {
+    background-color: transparent; 
+    transition: background-color; 
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+}
+
+.scrolled {
+    background-color: white;
+    transition: background-color 2s; 
+}
+
+#search-black {
+    position: relative; 
+    padding-left: 20px;
+    display: block;
+    margin-top: 30px;
+}
+
+#search-white {
+    position: relative; 
+    padding-left: 20px;
+}
+

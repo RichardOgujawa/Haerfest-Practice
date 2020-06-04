@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>AOS</title>
+    <link rel="stylesheet" href="aos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="menu-animate.js"></script>
+    <script src="parallax.js"></script>
+
 </head>
 <body>
-    Hi
+    <div class="navbar">
+        <div id="bg" class="notScrolled"></div>
+        <div class="img">
+            <img src="images/logo-black.png" id="logo">
+        </div>
+        <ul id="menu">
+            <li id="item1">Menu</li>
+            <li id="item2">Women</li>
+            <li id="item3">Explore</li>
+        </ul id="icons">
+        <ul>
+            <div id="icon-content">
+                <div id="search">
+                    <img src="images/search-black.png" width="20" id="search-white">
+                </div>
+                <div id="account">
+                    <img src="images/avatar-black.png" alt=""  width="20">
+                </div>
+                <div id="bag">
+                    <img src="images/shopping-bag-black.png" alt=""  width="20">
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div class="topContainer" ></div>
+    <div class="aosContainer">
+        <div id="image">
+            <img  src="images/bag.png" alt="One of our bags">
+        </div>
+        <div id="text">
+            <div class="text-content">
+                <h2>Your Everyday, Everywhere Bag</h2>
+                <h3>Featuring the Travel Backpack. <br>
+                    Carry it to your next workout, your <br>
+                    next pitch, your next big thing.</h3>
+                <div class="btnGrid">
+                    <button id="btn">
+                        <span>Shop Now</span> <img src="images/black-arrow.png" 
+                        alt="black arrow" width="20">
+                        <div id="rect"></div>
+                    </button>
+               </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
